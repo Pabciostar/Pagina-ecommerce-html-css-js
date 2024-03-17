@@ -1,0 +1,35 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* Encabezado */
+.tableDataEncabezado {
+    padding-left: 20px;
+}
+
+#tdSeparacion {
+    padding-left: 300px;
+}
+
+#hrEncabezado {
+    margin-bottom: 70px;
+}
+
+#image-product-1 {
+    display: inline-block;
+    overflow: hidden; 
+    padding: 0;
+    border-radius: 20px;
+    border: none;
+    width: 300px; /* Ajusta el ancho del botón */
+    height: 300px; /* Ajusta la altura del botón */
+    background-color: transparent;
+}
+
+  
+#image-product-1 img {
+    width: 100%; /* Ajusta el ancho de la imagen al 100% del ancho del botón */
+    height: auto; /* Ajusta automáticamente la altura para mantener la relación de aspecto original */
+  }
