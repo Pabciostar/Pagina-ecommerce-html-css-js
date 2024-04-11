@@ -1,163 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | E-commerce product page</title>
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    img {
+      width: max-content;
+      height: auto;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
   <main>
-    <section>
-      <table id="tablaEncabezado">
-        <tr>
-          <td class="tableDataEncabezado">
-            <img src="/images/logo.svg" alt="">
-          </td>
-          <td class="tableDataEncabezado">
-            Collections
-          </td>
-
-          <td class="tableDataEncabezado">
-            Men
-          </td>
-
-          <td class="tableDataEncabezado">
-            Women
-          </td>
-
-          <td class="tableDataEncabezado">
-            About
-          </td>
-
-          <td class="tableDataEncabezado">
-            Contact
-          </td>
-
-          <td id="tdSeparacion">
-
-          </td>
-
-          <td class="tableDataEncabezado">
-            <button>
-              carrito
-            </button>
-          </td>
-
-          <td class="tableDataEncabezado">
-            avatar
-          </td>
-        </tr>
-      </table>
-    </section>
-    
-    <hr id="hrEncabezado">
 
     <section>
-      <table>
-        <tr>
-          <td>
-            <table>
-              <tr>
-                <button id="image-product-1">
-                  <img src="/images/image-product-1.jpg" alt="">
-                </button>
-              </tr>
-
-              <tr>
-                <td>
-                  <button>
-                    imagen2
-                  </button>
-                </td>
-
-                <td>
-                  <button>
-                    imagen3
-                  </button>
-                </td>
-
-                <td>
-                  <button>
-                    imagen4
-                  </button>
-                </td>
-
-                <td>
-                  <button>
-                    imagen5
-                  </button>
-                </td>
-              </tr>
-            </table>
-          </td>
-
-          <td>
-            <div>
-              <h6>Sneaker Company</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <img style="width: 30rem;" src="images/image-product-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3">
+                  <input type="button">
+                </div>
+                <div class="col-3">
+                  <input type="button">
+                </div>
+                <div class="col-3">
+                  <input type="button">
+                </div>
+                <div class="col-3">
+                  <input type="button">
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-6">
+            <h3>LOREM</h3>
+            <h1>IPSUM</h1>
+            <p>LOREM IMPSUN</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <input type="button">
+                </div>
+                <div class="col-6">
+                  <input type="button">
+                </div>
+              </div>
+            </div>
+            <p>OJO</p>
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <input type="button">
+                </div>
+                <div class="col-6">
+                  <input type="button">
+                </div>
+          </div>
+        </div>
+      </div>
+
       
-            <div>
-              <h1>Fall Limited Edition Sneakers</h1>
-            </div>
-            
-            <div>
-              <p>
-                These low-profile sneakers are your perfect casual wear companion. Featuring a 
-                durable rubber outer sole, they’ll withstand everything the weather can offer.
-              </p>
-            </div>
-      
-            <div>
-              <table>
-                <tr>
-                  <td>
-                    $125.00
-                  </td>
-                  <td>
-                    50%
-                  </td>
-                </tr>
-              </table>
-            </div>
-            
-            <div>
-              $250.00
-            </div>
-
-            <div>
-              <table>
-                <tr>
-                  <td>
-                    0
-                  </td>
-                  <td>
-                    <button>
-                      Add to cart
-                    </button>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </td>
-        </tr>
-      </table>
     </section>
 
   </main>
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
